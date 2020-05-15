@@ -1,0 +1,1 @@
+C:\Anaconda3\python.exe C:\Anaconda3\cwp.py C:\Anaconda3 C:\Anaconda3\python.exe C:\Anaconda3\Scripts\jupyter-notebook-script.py "D:\OneDriveElipse\OneDrive - Elipse Software\EPM\Treinamento\MinicursoEPMAnalysis\MinicursoEPMAnalysisPresentation\jupyternb"
