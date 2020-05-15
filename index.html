@@ -6,15 +6,9 @@
         <title>EPM - minicourse Analysis</title>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/reveal.css">
-        <!-- <link rel="stylesheet" href="css/theme/black.css"> -->
-        <!-- <link rel="stylesheet" href="css/reveal.min.css">  \TODO verificar se isso realmente precisa!!!-->
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/theme/epmnight.css">
-        <!-- Theme used for syntax highlighting of code -->
         <link rel="stylesheet" href="lib/css/monokai.css">
-        <!-- With above configuration the notes canvas is opened and closed when pressing 'c' and the chalkboard is opened and closed when pressing 'b'.Click the left mouse button and drag to write on notes canvas or chalkboard.Click the right mouse button and drag to wipe away previous drawings. Click the 'DEL' key to clear the chalkboard. Click the 'd' key to download chalkboard drawings. Click the 'BACKSPACE' key to delete all chalkboard drawings on the current slide.
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        -->
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <!-- Printing and PDF exports -->
         <script>
@@ -64,41 +58,18 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
     </head>
 
     <body>
-        <!-- HELPS em https://github.com/hakimel/reveal.js#online-editor -->
         <div class="reveal">
             <div class="slides">
                 <!-- #################### FIRST SLIDE ####################  -->
-                <!--
-                    <section data-menu-title="...waiting..." data-background-image="resources/firstSlide.gif" data-background-size="100% 100%">
-                    -- >
-                    <!--
-                        <svg width="750" height="200">
-                        <text font-size="18" x="3" y="100">$Ax^2+Bxy+Cy^2+Dx+Ey+F=0, B^2-4AClt0$</text>
-                        </svg>
-                    -->
-                    <!--
-                        <aside class="notes">
-                        Slide inicial para ficar rodando enquanto se aguarda o início da apresentação.
-                        </aside>
-                        </section>
-                    -->
-
                     <!-- #################### SLIDE ####################  -->
                     <section data-background-image="resources/epm_reveal_black.png" data-background-size="100% 100%">
                         <h1>Introdução a Análises de dados de Processo</h1>
                         <h3>utilizando um Sistema de Gerenciamento de Informações de Processos (<a href="https://en.wikipedia.org/wiki/Plant_Information_Management_System" target="_blank"><em>PIMS</em></a>)</h3>
                         <h3>caso prático com o <em>EPM</em> (<em> Elipse Plant Manager - PIMS</em> da <a href="https://www.elipse.com.br" target="_blank"><em>Elipse Software</em></a>)</h3>
                         <br>
-                        <!-- \TODO: acertar o link quando estiver no GitHub  VERIFICAR COMO melhorar apresentação impressa no caso de adicionar NOTAS-->
-                        <!--
-                            <a href="http://mauricio:8001/MinicursoEPMAnalysis/?print-pdf&showNotes=true" target="_blank">Imprimir em <strong>PDF </strong><em>(Chromium/Chrome)</em></a>
-                        -->
                         <br>
                         <br>
                         <p class="details"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="resources/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
-                        <!--
-                        <p class="details"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
-                        -->
                         <aside class="notes">
                             Este minicurso foi concebido especialmente para os alunos dos cursos de graduação e pós-graduação em <em>Engenharia (Eng. Química, Eng. Elétrica, Eng. de Controle e Automação, Eng. de Alimentos, Eng. Ambiental, etc.)</em> onde a análise de dados de processos, costuma ser uma das tarefas do cotidiano destes profissionais, seja na busca por novas oportunidades de melhorias, na análise de problemas e proposição de soluções, bem como o acompanhamento das mesmas.
                             <p>Ele é parte integrante do conjunto de ações que a <em>Elipse Software</em> sempre promoveu na direção de fortalecer a capacitação dos estudantes, futuros profissionais da área de <em>Controle e Automação</em> e da Indústria em geral.</p>
@@ -284,14 +255,6 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
                                     <br>
                                     <span class="fragment fade-in-then-semi-out">Sabendo qual o maior “LUCRO possível”, como atingi-lo?</span>
                                     </p>
-
-                                    <!--
-                                        <ul>
-                                        <li class="fragment fade-in-then-semi-out">Mas como saber se o negócio está dando lucro?</li>
-                                        <li class="fragment fade-in-then-semi-out">Sabendo que o negócio está “dando lucro”, como saber se este é o maior LUCRO  possível?</li>
-                                        <li class="fragment fade-in-then-semi-out">Sabendo qual o maior “LUCRO possível”, como atingi-lo?</li>
-                                        </ul>
-                                    -->
                                 </div>
                             </div>
                             <aside class="notes">
@@ -1007,9 +970,6 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
                                     <code>pip install epmwebapi</code>
                                     <p>Outra forma de instalar este módulo é simplesmente colocar todo o diretório da <em>empwebapi</em> dentro do diretório <code>.../site-packages</code> onde costuma-se dispor todos os módulos instalados no <em>Python</em>.</p>
                                     <p>Vale ressaltar que esta API só funciona a partir da versão <em>Python 3.6</em> e é <em>INDEPENDENTE DE PLATAFORMA</em> &#9786;!!!</p>
-                                    <!---
-                                    <p>Além desta API, ainda existe outra para o Python 2.7, que será descontinuado em 2020. Esta API pode ser baixada diretamente do site da <a href="https://www.elipse.com.br" target="_blank"><em>Elipse Software</em></a>, juntamente com seu tutorial e exemplos de utilização.</p>
-                                    -->
                                 </aside>
                         </section>
                         <!-- #################### SLIDE 21 ####################  -->
@@ -1151,345 +1111,90 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 
         <script src="js/reveal.js"></script>
         <script>
-            // More info about config & dependencies:
-            // - https://github.com/hakimel/reveal.js#configuration
-            // - https://github.com/hakimel/reveal.js#dependencies
             Reveal.initialize({
-                // The "normal" size of the presentation, aspect ratio will be preserved
-                // when the presentation is scaled to fit different resolutions. Can be
-                // specified using percentage units.
                 width: 1400, // "100%",
                 height: 600,
-                // Factor of the display size that should remain empty around the content
                 margin: 0.5,
-                // Bounds for smallest/largest possible scale to apply to content
                 minScale: 0.2,
                 maxScale: 1.5,
-                // Display presentation control arrows
                 controls: true,
-                // Help the user learn the controls by providing hints, for example by
-                // bouncing the down arrow when they first encounter a vertical slide
                 controlsTutorial: true,
-                // Determines where controls appear, "edges" or "bottom-right"
                 controlsLayout: 'edges',
-                // Visibility rule for backwards navigation arrows; "faded", "hidden"
-                // or "visible"
                 controlsBackArrows: 'faded',
-                // Display a presentation progress bar
                 progress: true,
-                // Display the page number of the current slide
                 slideNumber: true,
-                // Add the current slide number to the URL hash so that reloading the
-                // page/copying the URL will return you to the same slide
                 hash: true,
-                // Push each slide change to the browser history. Implies `hash: true`
                 history: false,
-                // Enable keyboard shortcuts for navigation
                 keyboard: true,
-                // Enable the slide overview mode - usar ESC
                 overview: true,
-                // Vertical centering of slides
                 center: true,
-                // Enables touch navigation on devices with touch input
-                //touch: true,
-                // Loop the presentation
                 loop: false,
-                // Change the presentation direction to be RTL
                 rtl: false,
-                // See https://github.com/hakimel/reveal.js/#navigation-mode
-                //navigationMode: 'default',
-                // Randomizes the order of slides each time the presentation loads
-                //shuffle: false,
-                // Turns fragments on and off globally
-                //fragments: true,
-                // Flags whether to include the current fragment in the URL,
-                // so that reloading brings you to the same fragment position
-                //fragmentInURL: false,
-                // Flags if the presentation is running in an embedded mode,
-                // i.e. contained within a limited portion of the screen
-                //embedded: false,
-                // Flags if we should show a help overlay when the questionmark
-                // key is pressed
                 help: true,
-                // Flags if speaker notes should be visible to all viewers
-                //showNotes: false,
-                // Global override for autoplaying embedded media (video/audio/iframe)
-                // - null: Media will only autoplay if data-autoplay is present
-                // - true: All media will autoplay, regardless of individual setting
-                // - false: No media will autoplay, regardless of individual setting
                 autoPlayMedia: null,
-                // Global override for preloading lazy-loaded iframes
-                // - null: Iframes with data-src AND data-preload will be loaded when within
-                //   the viewDistance, iframes with only data-src will be loaded when visible
-                // - true: All iframes with data-src will be loaded when within the viewDistance
-                // - false: All iframes with data-src will be loaded only when visible
                 preloadIframes: null,
-                // Number of milliseconds between automatically proceeding to the
-                // next slide, disabled when set to 0, this value can be overwritten
-                // by using a data-autoslide attribute on your slides
-                //autoSlide: 0,
-                // Stop auto-sliding after user input
-                //autoSlideStoppable: true,
-                // Use this method for navigation when auto-sliding
-                //autoSlideMethod: Reveal.navigateNext,
-                // Specify the average time in seconds that you think you will spend
-                // presenting each slide. This is used to show a pacing timer in the
-                // speaker view
                 defaultTiming: 120,
-                // Enable slide navigation via mouse wheel
                 mouseWheel: true,
-                // Hide cursor if inactive
                 hideInactiveCursor: true,
-                // Time before the cursor is hidden (in ms)
                 hideCursorTime: 5000,
-                // Hides the address bar on mobile devices
-                //hideAddressBar: true,
-                // Opens links in an iframe preview overlay
-                // Add `data-preview-link` and `data-preview-link="false"` to customise each link
-                // individually
-                //previewLinks: false,
-                // Transition style
                 transition: 'concave', // none/fade/slide/convex/concave/zoom
-                // Transition speed
                 transitionSpeed: 'default', // default/fast/slow
-                // Transition style for full page slide backgrounds
                 backgroundTransition: 'none', // none/fade/slide/convex/concave/zoom
-                // Number of slides away from the current that are visible - relação com Lazy Loading
                 viewDistance: 3,
                 pdfSeparateFragments: false,
-                // Parallax background image
-                //parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
-                // Parallax background size
-                //parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
-                // Number of pixels to move the parallax background per slide
-                // - Calculated automatically unless specified
-                // - Set to 0 to disable movement along an axis
-                //parallaxBackgroundHorizontal: null,
-                //parallaxBackgroundVertical: null,
-                // The display mode that will be used to show slides
-                //display: 'block'
                 // ***** Chalk Board *****
                 chalkboard: { 
-                    // optionally load pre-recorded chalkboard drawing from file
-                    // src: "chalkboard.json",
                     src: null,
                     readOnly: false, 
                     toggleChalkboardButton: { left: "60px", bottom: "10px", top: "auto", right: "auto" },
                     toggleNotesButton: { left: "90px", bottom: "10px", top: "auto", right: "auto" },
                     transition: 800,
                     theme: "chalkboard",
-                    // configuration options for notes canvas and chalkboard
-                    //color: [ 'rgba(0,0,255,1)', 'rgba(255,255,255,0.5)' ],
                     color: ['#e6e600', '#00ffff'],
                 },
-                // ***** Mathjax ***** \TODO - parece que não precisa disto apra funcioanr o MathJax - basta estar na declaração dos plugins!
-                //math: {
-                //    //mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
-                //    'js/MathJax.js',
-                //    // See http://docs.mathjax.org/en/latest/config-files.html
-                //    config: 'TeX-AMS_HTML-full',
-                //    // pass other options into `MathJax.Hub.Config()`
-                //    TeX: { Macros: macros },
-                //},
-                //anything: [ 
-                //    {
-                //        className: "random", 
-                //        defaults: {min: 0, max: 9}, 
-                //        initialize: (function(container, options){ 
-                //            container.innerHTML = Math.trunc( options.min + Math.random()*(options.max-options.min + 1) ); 
-                //        }) 
-                //    },
                 dependencies: [
-                    // Interpret Markdown in <section> elements
                     { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
                     { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    // Syntax highlight for <code> elements
                     { src: 'plugin/highlight/highlight.js', async: true },
-                    // Zoom in and out with Alt+click
                     { src: 'plugin/zoom-js/zoom.js', async: true },
-                    // Speaker notes
                     { src: 'plugin/notes/notes.js', async: true },
-                    // MathJax
                     { src: 'plugin/math/math.js', async: true },
-                    // Chalkboard
                     { src: 'plugin/chalkboard/chalkboard.js' },
-                    // Anything
-                    //{ src: 'plugin/anything/anything.js' },
-                    // Menu
                     { src: 'plugin/menu/menu.js' },
-                    // MathSVG
                     { src: 'plugin/mathsvg/math.js', async: true },
                     { src: 'https://d3js.org/d3.v4.min.js' },
                     { src: 'plugin/d3js/d3js.js' },
-                    //{ src: 'plugin/spotlight/spotlight.js' },
                 ],
-                //spotlight: {
-                //    // size of the spotlight
-                //    size: 60,
-                //    // true: Locks the mouse pointer inside the presentation
-                //    // there is by design (Pointer Lock API) no spotlightCursor and presentingCursor 
-                //    // displayed regardless of the configured values 
-                //    lockPointerInsideCanvas: false,
-                //    // toggle spotlight by holding down the mouse key
-                //    toggleSpotlightOnMouseDown: true,
-                //    // the keyCode pressed and held to turn on spotlight, disabled when set to false
-                //    // Problems with this config? Maybe your touchpad is disabled on keypress? 
-                //    spotlightOnKeyPressAndHold: false,
-                //    // choose the cursor when spotlight is on. Maybe "crosshair"?
-                //    spotlightCursor: 'none',
-                //    // choose the cursor when spotlight is off and in presentation mode. Maybe "default"?
-                //    presentingCursor: 'none', 
-                //    // true: initially in presentation mode, will also be ture if this is not set and toggleSpotlightOnMouseDown is true
-                //    initialPresentationMode: true,
-                //    // true: disable selecting in presentation mode
-                //    disablingUserSelect: true,
-                //    // set to a number as transition duration in ms to enable fade in and out, disabled when set to false
-                //    fadeInAndOut: 100,
-                //    // enable pointer mode
-                //    useAsPointer: false,
-                //    // pointer color (If pointer mode enabled)
-                //    pointerColor: 'red',
-                //},
                 keyboard: {
                     67: function() { RevealChalkboard.toggleNotesCanvas() },	// toggle notes canvas when 'c' is pressed
                     66: function() { RevealChalkboard.toggleChalkboard() },	// toggle chalkboard when 'b' is pressed
                     46: function() { RevealChalkboard.clear() },	// clear chalkboard when 'DEL' is pressed
                     8: function() { RevealChalkboard.reset() },	// reset chalkboard data on current slide when 'BACKSPACE' is pressed
                     68: function() { RevealChalkboard.download() },	// downlad recorded chalkboard drawing when 'd' is pressed
-                    // alternative to toggleSpotlightOnMouseDown: 
-                    // toggle spotlight by pressing key 'h'
-                    //72: function() { RevealSpotlight.toggleSpotlight() },
-                    // enter/leave presentation mode by pressing key 'p'
-                    //80: function() { RevealSpotlight.togglePresentationMode() }, 
                 },
                 menu: {
-                    // Specifies which side of the presentation the menu will 
-                    // be shown. Use 'left' or 'right'.
                     side: 'left',
-                    // Specifies the width of the menu.
-                    // Can be one of the following:
-                    // 'normal', 'wide', 'third', 'half', 'full', or
-                    // any valid css length value
                     width: 'third',
-                    // Add slide numbers to the titles in the slide list.
-                    // Use 'true' or format string (same as reveal.js slide numbers)
                     numbers: false,
-                    // Specifies which slide elements will be used for generating
-                    // the slide titles in the menu. The default selects the first
-                    // heading element found in the slide, but you can specify any
-                    // valid css selector and the text from the first matching
-                    // element will be used.
-                    // Note: that a section data-menu-title attribute or an element
-                    // with a menu-title class will take precedence over this option
-                    //titleSelector: 'h1, h2, h3',
                     titleSelector: 'h1',
-                    // If slides do not have a matching title, attempt to use the
-                    // start of the text content as the title instead
                     useTextContentForMissingTitles: false,
-                    // Hide slides from the menu that do not have a title.
-                    // Set to 'true' to only list slides with titles.
                     hideMissingTitles: true,
-                    // Adds markers to the slide titles to indicate the 
-                    // progress through the presentation. Set to 'false'
-                    // to hide the markers.
                     markers: false,
-                    // Specify custom panels to be included in the menu, by
-                    // providing an array of objects with 'title', 'icon'
-                    // properties, and either a 'src' or 'content' property.
                     custom: false,
-                    // Specifies the themes that will be available in the themes
-                    // menu panel. Set to 'true' to show the themes menu panel
-                    // with the default themes list. Alternatively, provide an
-                    // array to specify the themes to make available in the
-                    // themes menu panel, for example...
-                    // [
-                        //     { name: 'Black', theme: 'css/theme/black.css' },
-                        //     { name: 'White', theme: 'css/theme/white.css' },
-                        //     { name: 'League', theme: 'css/theme/league.css' }
-                        // ]
                     themes: false,
-                    // Specifies the path to the default theme files. If your
-                    // presentation uses a different path to the standard reveal
-                    // layout then you need to provide this option, but only
-                    // when 'themes' is set to 'true'. If you provide your own 
-                    // list of themes or 'themes' is set to 'false' the 
-                    // 'themesPath' option is ignored.
                     themesPath: 'css/theme/',
-                    // Specifies if the transitions menu panel will be shown.
-                    // Set to 'true' to show the transitions menu panel with
-                    // the default transitions list. Alternatively, provide an
-                    // array to specify the transitions to make available in
-                    // the transitions panel, for example...
-                    // ['None', 'Fade', 'Slide']
                     transitions: false,
-                    // Adds a menu button to the slides to open the menu panel.
-                    // Set to 'false' to hide the button.
                     openButton: false,
-                    // If 'true' allows the slide number in the presentation to
-                    // open the menu panel. The reveal.js slideNumber option must 
-                    // be displayed for this to take effect
                     openSlideNumber: false,
-                    // If true allows the user to open and navigate the menu using
-                    // the keyboard. Standard keyboard interaction with reveal
-                    // will be disabled while the menu is open.
                     keyboard: false,
-                    // Normally the menu will close on user actions such as
-                    // selecting a menu item, or clicking the presentation area.
-                    // If 'true', the sticky option will leave the menu open
-                    // until it is explicitly closed, that is, using the close
-                    // button or pressing the ESC or m key (when the keyboard 
-                        // interaction option is enabled).
                     sticky: false,
-                    // If 'true' standard menu items will be automatically opened
-                    // when navigating using the keyboard. Note: this only takes 
-                    // effect when both the 'keyboard' and 'sticky' options are enabled.
                     autoOpen: true,
-                    // If 'true' the menu will not be created until it is explicitly
-                    // requested by calling RevealMenu.init(). Note this will delay
-                    // the creation of all menu panels, including custom panels, and
-                    // the menu button.
                     delayInit: false,
-                    // If 'true' the menu will be shown when the menu is initialised.
                     openOnInit: false,
-                    // By default the menu will load it's own font-awesome library
-                    // icons. If your presentation needs to load a different
-                    // font-awesome library the 'loadIcons' option can be set to false
-                    // and the menu will not attempt to load the font-awesome library.
                     loadIcons: true
                 },
             });
         </script>
     </body>
-
-
 </html>
-
-
-
-
-<!--
-\TODO
-
-Melhorar desempenho Apache: https://github.com/h5bp/server-configs-apache.git
-
-
-Add refs.:
-
-lighted-buildings-near-body-of-water-3105242.jpg
-Foto de Johannes Plenio no Pexels
-
-men-working-at-night-256219.jpg
-Foto de Pixabay no Pexels
-
-woman-coding-on-computer-3861958.jpg
-Foto de ThisIsEngineering no Pexels
-
-man-in-black-holding-phone-618613.jpg
-Foto de Sanpewire no Pexels
-
-
-
--->
-
-
 
